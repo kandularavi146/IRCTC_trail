@@ -12,6 +12,19 @@ import org.springframework.stereotype.Component;
 public class UserEntity {
 
 	@Id
+	private String userId;
+	public String getUserId() {
+		return userId;
+	}
+	public void setUserId(String userId) {
+		this.userId = userId;
+	}
+	public String getEmail() {
+		return email;
+	}
+	public void setEmail(String email) {
+		this.email = email;
+	}
 	private String name;
 	private String password;
 	private String email;

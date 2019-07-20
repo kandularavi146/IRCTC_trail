@@ -1,14 +1,15 @@
 package com.ravi.irctc.model;
 
 import java.util.LinkedList;
+import java.util.List;
 
 public class PassengerListContainer {
 
 	private LinkedList<Passenger> linkedList=new LinkedList<Passenger>();
 
-	public PassengerListContainer(LinkedList<Passenger> linkedList) {
+	public PassengerListContainer(List<Passenger> passengerList) {
 		super();
-		this.linkedList = linkedList;
+		this.linkedList = (LinkedList<Passenger>) passengerList;
 	}
 
 	public PassengerListContainer() {

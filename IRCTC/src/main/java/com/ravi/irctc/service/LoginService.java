@@ -16,7 +16,7 @@ public class LoginService {
 	private UserRepository userRepository;
 	
 	@SuppressWarnings("unused")
-	private User autenticateLogin(Login login) throws InvalidCrendentialException{
+	public User autenticateLogin(Login login) throws InvalidCrendentialException{
 		UserEntity userEntity=userRepository.findOne(login.getName());
 		User user=new User();
 		user.setCity(userEntity.getCity());

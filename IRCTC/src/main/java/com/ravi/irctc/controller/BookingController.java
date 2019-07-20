@@ -17,7 +17,6 @@ import com.ravi.irctc.model.CreditCard;
 import com.ravi.irctc.model.PassengerListContainer;
 import com.ravi.irctc.model.SearchFlights;
 import com.ravi.irctc.service.BookingService;
-import com.ravi.irctc.service.FlightService;
 
 @Controller
 @SessionAttributes({"booking", "userId"})
